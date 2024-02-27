@@ -1,0 +1,148 @@
+* {
+  font-family: "Manrope Variable", sans-serif;
+  text-decoration: none !important;
+  scroll-behavior: smooth;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --orangeLight: #dd5e14;
+  --white100: #ffffff;
+  --dark100: #0f1212;
+  --teal100: rgb(174, 195, 185);
+  --teal200: rgb(70, 94, 83);
+  --grey100: #e2e3e5;
+}
+
+.cursor {
+  cursor: pointer;
+}
+/* body {
+  max-width: 1440px;
+  margin: 0 auto;
+} */
+
+a {
+  color: inherit !important;
+}
+
+a:hover {
+  color: var(--teal200) !important;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  filter: brightness(80%);
+  transition: 0.3s ease-in-out;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.activeLink {
+  color: var(--orangeLight) !important;
+  transition: 0.3s ease-in-out;
+}
+.no-activeLink:hover {
+  color: var(--teal200) !important;
+  transition: 0.3s ease-in-out;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
+.cardBox {
+  position: relative;
+}
+
+.focus-download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.focus-heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.backdrop {
+  background-image: url("https://unsplash.com/photos/3hRl61WieaE/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NzJ8fEluc3RhZ3JhbXxlbnwwfHx8fDE3MDg1MTQ5NzJ8MA&force=true&w=1920");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.form {
+  width: 90%;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+.form {
+  width: 420px;
+}
+}
+@media (min-width: 1200px) {
+  .cardBox {
+    overflow: hidden;
+  }
+  .cardBox *, .pinId-Img{
+    transition: 0.3 ease all;
+  }
+  .cardBox:hover img {
+    background-color: var(--dark100);
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%) !important;
+    transition: 0.3s ease-in-out;
+  }
+  .pinId-Img:hover {
+    transition: 0.3 ease-in-out;
+  }
+  
+}
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
